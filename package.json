@@ -17,7 +17,7 @@
 	},
 	"homepage": "https://github.com/cedaro/satispress",
 	"devDependencies": {
-		"archiver": "5.3.2",
+		"archiver": "6.0.0",
 		"fs-extra": "9.1.0",
 		"glob": "7.2.3",
 		"minimist": "1.2.8"
