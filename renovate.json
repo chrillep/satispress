@@ -1,42 +1,85 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"labels": ["dependencies"],
-	"baseBranches": ["develop"],
+	"labels": [
+		"dependencies"
+	],
+	"baseBranches": [
+		"develop"
+	],
 	"commitMessageAction": "⬆️ Bump",
-	"extends": ["config:best-practices", "schedule:monthly", ":dependencyDashboard"],
+	"extends": [
+		"config:best-practices",
+		"schedule:monthly",
+		":dependencyDashboard"
+	],
 	"commitMessageTopic": "{{depName}}",
 	"forkProcessing": "enabled",
 	"packageRules": [
 		{
-			"matchUpdateTypes": ["major", "minor", "patch", "pin"]
+			"matchCategories": [
+				"php"
+			],
+			"addLabels": [
+				"php"
+			]
 		},
 		{
-			"matchManagers": ["npm"],
-			"addLabels": ["npm"]
+			"matchCategories": [
+				"js"
+			],
+			"addLabels": [
+				"javascript"
+			]
 		},
 		{
-			"matchManagers": ["composer"],
-			"addLabels": ["composer"],
+			"matchUpdateTypes": [
+				"major",
+				"minor",
+				"patch",
+				"pin"
+			]
+		},
+		{
+			"matchManagers": [
+				"npm"
+			],
+			"addLabels": [
+				"npm"
+			]
+		},
+		{
+			"matchManagers": [
+				"composer"
+			],
+			"addLabels": [
+				"composer"
+			],
 			"rangeStrategy": "bump"
 		},
 		{
-			"matchUpdateTypes": ["major"],
-			"addLabels": ["major"]
+			"matchUpdateTypes": [
+				"major"
+			],
+			"addLabels": [
+				"major"
+			]
 		},
 		{
-			"matchUpdateTypes": ["minor"],
-			"addLabels": ["minor"]
+			"matchUpdateTypes": [
+				"minor"
+			],
+			"addLabels": [
+				"minor"
+			]
 		},
 		{
-			"matchUpdateTypes": ["patch"],
-			"addLabels": ["patch"]
+			"matchUpdateTypes": [
+				"patch"
+			],
+			"addLabels": [
+				"patch"
+			]
 		}
 	],
-	"js": {
-		"addLabels": ["javascript"]
-	},
-	"php": {
-		"addLabels": ["php"]
-	},
 	"timezone": "Europe/Stockholm"
 }
