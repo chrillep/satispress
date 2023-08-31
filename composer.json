@@ -54,7 +54,7 @@
 	"require-dev": {
 		"brain/monkey": "^2.6",
 		"cedaro/wp-test-suite": "dev-develop",
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
 		"phpcompatibility/phpcompatibility-wp": "^2",
 		"phpunit/phpunit": "*",
 		"roave/security-advisories": "dev-latest",
