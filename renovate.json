@@ -3,7 +3,7 @@
 	"labels": [
 		"dependencies"
 	],
-	"baseBranches": [
+	"baseBranchPatterns": [
 		"develop"
 	],
 	"commitMessageAction": "⬆️ Bump",
